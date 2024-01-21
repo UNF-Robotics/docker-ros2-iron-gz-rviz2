@@ -1,11 +1,11 @@
 # docker-ros2-iron-gz-rviz2
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=plastic)](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/blob/master/LICENSE.txt)
-[![Docker Image Status](https://img.shields.io/docker/cloud/build/ospreyrobotics/docker-ros2-iron.svg?colorA=9977bb&style=plastic)](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/actions/workflows/main.yml/badge.svg/
+[![Docker Image Status](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/actions/workflows/main.yml/badge.svg/)](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/actions)
 
 Docker image with ROS 2 Iron Development Environment with Gazebo and RViz2
 for UNF Osprey Robotics Club
 
-[Latest](https://hub.docker.com/r/ospreyrobotics/docker-ros2-iron/tags)
+[Latest](https://hub.docker.com/r/ospreyrobotics/docker-ros2-iron-gz-rviz2/tags)
 
 ## Docker Pull Command
 ```bash
