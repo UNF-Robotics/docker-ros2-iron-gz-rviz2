@@ -2,9 +2,9 @@ FROM ospreyrobotics/docker-ros2-iron:latest
 
 # install gazebo & rviz2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
+	gazebo \
 	qt5ct \
-	ros-iron-gz-ros2-control \
-	ros-iron-ros-ign-gazebo \
+	ros-iron-gazebo-ros2-control \
 	ros-iron-rviz2 \
 	&& rm -rf /var/lib/apt/lists/*
 
