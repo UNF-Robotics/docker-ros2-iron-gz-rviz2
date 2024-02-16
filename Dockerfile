@@ -15,6 +15,7 @@ RUN apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 # dark theme
+COPY ignition/gazebo/6/gui.config /root/.ignition/gazebo/6/gui.config
 COPY qt5ct/qt5ct.conf /root/.config/qt5ct/qt5ct.conf
 COPY qt5ct/colors/Dracula.conf /root/.config/qt5ct/colors/Dracula.conf
 
