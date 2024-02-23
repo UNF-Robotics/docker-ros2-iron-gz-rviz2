@@ -9,9 +9,10 @@ RUN apt-get install -y --no-install-recommends \
 	qt5ct \
 	ros-iron-ros-ign-gazebo \
 	ros-iron-gazebo-ros2-control \
-	ros-iron-ros-gz-bridge \
 	ros-iron-gz-ros2-control \
+	ros-iron-ros-gz-bridge \
 	ros-iron-ros2controlcli \
+	ros-iron-rqt-graph \
 	ros-iron-rviz2 \
 	&& rm -rf /var/lib/apt/lists/*
 
