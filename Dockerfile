@@ -7,10 +7,12 @@ RUN apt-get update && apt-get upgrade -y --no-install-recommends
 RUN apt-get install -y --no-install-recommends \
 	gazebo \
 	qt5ct \
-	ros-iron-ros-ign-gazebo \
 	ros-iron-gazebo-ros2-control \
+	ros-iron-grid-map-rviz-plugin \
 	ros-iron-gz-ros2-control \
+	ros-iron-nav2-rviz-plugins \
 	ros-iron-ros-gz-bridge \
+	ros-iron-ros-ign-gazebo \
 	ros-iron-ros2controlcli \
 	ros-iron-rqt-graph \
 	ros-iron-rviz2 \
