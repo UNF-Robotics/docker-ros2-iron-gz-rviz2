@@ -38,3 +38,6 @@ RUN echo "ros2 launch osprey_ros ign_gazebo.launch.py classic:=True world:=artem
 	>> /root/.bash_history
 RUN echo "ros2 launch osprey_ros ign_gazebo.launch.py world:=artemis_arena" \
 	>> /root/.bash_history
+RUN echo "ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true" \
+	>> /root/.bash_history
+
