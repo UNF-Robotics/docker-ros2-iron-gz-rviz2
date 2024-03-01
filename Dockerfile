@@ -10,6 +10,7 @@ RUN apt-get install -y --no-install-recommends \
 	ros-iron-gazebo-ros2-control \
 	ros-iron-grid-map-rviz-plugin \
 	ros-iron-gz-ros2-control \
+	ros-iron-nav2-bringup \
 	ros-iron-nav2-rviz-plugins \
 	ros-iron-ros-gz-bridge \
 	ros-iron-ros-ign-gazebo \
