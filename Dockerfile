@@ -6,6 +6,7 @@ RUN apt-get update && apt-get upgrade -y --no-install-recommends
 # install gazebo & rviz2 packages
 RUN apt-get install -y --no-install-recommends \
 	gazebo \
+	nano \
 	qt5ct \
 	ros-iron-gazebo-ros2-control \
 	ros-iron-grid-map-rviz-plugin \
