@@ -5,10 +5,8 @@ RUN apt-get update && apt-get upgrade -y --no-install-recommends
 
 # install gazebo & rviz2 packages
 RUN apt-get install -y --no-install-recommends \
-	gazebo \
 	nano \
 	qt5ct \
-	ros-iron-gazebo-ros2-control \
 	ros-iron-grid-map-rviz-plugin \
 	ros-iron-gz-ros2-control \
 	ros-iron-nav2-bringup \
@@ -35,8 +33,6 @@ RUN echo 'export GZ_SIM_RESOURCE_PATH=${GAZEBO_MODEL_PATH}:${GZ_SIM_RESOURCE_PAT
 
 # common commands added to history
 RUN echo "rviz2 -d src/osprey_ros/sim/robot.rviz" \
-	>> /root/.bash_history
-RUN echo "ros2 launch osprey_ros ign_gazebo.launch.py classic:=True world:=artemis_arena" \
 	>> /root/.bash_history
 RUN echo "ros2 launch osprey_ros ign_gazebo.launch.py world:=artemis_arena" \
 	>> /root/.bash_history
