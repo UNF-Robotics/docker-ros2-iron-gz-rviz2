@@ -1,0 +1,37 @@
+FROM ospreyrobotics/docker-ros2-iron:latest
+
+# update base system
+RUN apt-get update && apt-get upgrade -y --no-install-recommends
+
+# prep for new gazebo
+RUN curl https://packages.osrfoundation.org/gazebo.gpg \
+		-o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
+		echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" \
+			| tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
+
+# install gazebo & rviz2 packages
+RUN apt-get install -y --no-install-recommends \
+	gazebo \
+	qt5ct \
+	ros-iron-ros-gzgarden \
+	ros-iron-gazebo-ros2-control \
+	ros-iron-gz-ros2-control \
+	ros-iron-ros2controlcli \
+	ros-iron-rviz2
+
+# ensure system is up to date
+RUN apt-get update && apt-get upgrade -y --no-install-recommends \
+	&& rm -rf /var/lib/apt/lists/*
+
+# dark theme
+COPY ignition/gazebo/6/gui.config /root/.ignition/gazebo/6/gui.config
+COPY qt5ct/qt5ct.conf /root/.config/qt5ct/qt5ct.conf
+COPY qt5ct/colors/Dracula.conf /root/.config/qt5ct/colors/Dracula.conf
+
+RUN echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> /root/.bashrc
+
+# media/resource paths for Gazebo Classic and IGN
+RUN echo "export GAZEBO_MODEL_PATH=/opt/ros_ws/src/osprey_ros/worlds/models/:${GAZEBO_MODEL_PATH}" \
+	>> /root/.bashrc
+RUN echo "export GZ_SIM_RESOURCE_PATH=${GAZEBO_MODEL_PATH}:${GZ_SIM_RESOURCE_PATH}" \
+	>> /root/.bashrc
