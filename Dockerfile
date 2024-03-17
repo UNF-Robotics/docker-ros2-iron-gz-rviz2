@@ -16,6 +16,7 @@ RUN apt-get install -y --no-install-recommends \
 	ros-iron-ros-ign-gazebo \
 	ros-iron-ros2controlcli \
 	ros-iron-rqt-graph \
+	ros-iron-rqt-image-view \
 	ros-iron-rviz2 \
 	&& rm -rf /var/lib/apt/lists/*
 
