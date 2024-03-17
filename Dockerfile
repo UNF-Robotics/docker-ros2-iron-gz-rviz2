@@ -12,6 +12,7 @@ RUN apt-get install -y --no-install-recommends \
 	ros-iron-nav2-bringup \
 	ros-iron-nav2-rviz-plugins \
 	ros-iron-ros-gz-bridge \
+	ros-iron-ros-gz-image \
 	ros-iron-ros-ign-gazebo \
 	ros-iron-ros2controlcli \
 	ros-iron-rqt-graph \
