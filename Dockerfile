@@ -9,6 +9,7 @@ RUN apt-get install -y --no-install-recommends \
 	qt5ct \
 	ros-iron-grid-map-rviz-plugin \
 	ros-iron-gz-ros2-control \
+	ros-iron-image-geometry \
 	ros-iron-nav2-bringup \
 	ros-iron-nav2-rviz-plugins \
 	ros-iron-ros-gz-bridge \
