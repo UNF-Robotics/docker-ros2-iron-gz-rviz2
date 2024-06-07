@@ -3,7 +3,9 @@
 [![Docker Image Status](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/actions/workflows/main.yml/badge.svg/)](https://github.com/Osprey-Robotics/docker-ros2-iron-gz-rviz2/actions)
 
 Docker image with ROS 2 Iron Development Environment with Gazebo and RViz2
-for UNF Osprey Robotics Club
+for various robotics purposes at UNF, club, research, and development.
+This container contains the initial environment to build and run ROS 2
+simulations using Gazebo and RViz2.
 
 [Latest](https://hub.docker.com/r/ospreyrobotics/docker-ros2-iron-gz-rviz2/tags)
 
